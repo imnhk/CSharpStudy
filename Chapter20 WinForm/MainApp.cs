@@ -126,58 +126,87 @@ class MainApp : Form
     #endregion
 
     #region FormBackGround
+    /*
+class MainApp : Form
+{
+    Random rand;
+
+    static void Main(string[] args)
+    {
+        Application.Run(new MainApp());
+    }
+
+    public MainApp()
+    {
+        rand = new Random();
+        this.MinimizeBox = true;
+        this.MaximizeBox = true;
+        this.Text = "Image Background";
+        this.MouseWheel += new MouseEventHandler(MainApp_MouseWheel);
+        this.MouseDown += new MouseEventHandler(MainApp_MouseDown);
+    }
+
+    void MainApp_MouseWheel(object sender, MouseEventArgs e)
+    {
+        this.Opacity = this.Opacity + (e.Delta > 0 ? 0.1 : -0.1);
+        Console.WriteLine($"Opacity: {this.Opacity}");
+    }
+
+    void MainApp_MouseDown(object sender, MouseEventArgs e)
+    {
+        if(e.Button == MouseButtons.Left)
+        {
+            Color oldColor = this.BackColor;
+            this.BackColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255));
+        }
+        else if(e.Button == MouseButtons.Right)
+        {
+            if(this.BackgroundImage != null)
+            {
+                this.BackgroundImage = null;
+                return;
+            }
+
+            string file = "img.png";
+            if (!System.IO.File.Exists(file))
+                MessageBox.Show("No image file");
+            else
+            {
+                this.BackgroundImage = Image.FromFile(file);
+                this.Size = this.BackgroundImage.Size;
+            }
+        }
+    }
+}
+*/
+    #endregion
+
+    #region FromAndControl
         /*
     class MainApp : Form
     {
-        Random rand;
-        
         static void Main(string[] args)
         {
-            Application.Run(new MainApp());
-        }
+            Button button = new Button();
 
-        public MainApp()
-        {
-            rand = new Random();
-            this.MinimizeBox = true;
-            this.MaximizeBox = true;
-            this.Text = "Image Background";
-            this.MouseWheel += new MouseEventHandler(MainApp_MouseWheel);
-            this.MouseDown += new MouseEventHandler(MainApp_MouseDown);
-        }
+            button.Text = "Click!";
+            button.Left = 50;
+            button.Top = 20;
 
-        void MainApp_MouseWheel(object sender, MouseEventArgs e)
-        {
-            this.Opacity = this.Opacity + (e.Delta > 0 ? 0.1 : -0.1);
-            Console.WriteLine($"Opacity: {this.Opacity}");
-        }
-
-        void MainApp_MouseDown(object sender, MouseEventArgs e)
-        {
-            if(e.Button == MouseButtons.Left)
+            button.Click += (object sender, EventArgs e) =>
             {
-                Color oldColor = this.BackColor;
-                this.BackColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255));
-            }
-            else if(e.Button == MouseButtons.Right)
-            {
-                if(this.BackgroundImage != null)
-                {
-                    this.BackgroundImage = null;
-                    return;
-                }
+                MessageBox.Show("MessageBox!");
+            };
 
-                string file = "img.png";
-                if (!System.IO.File.Exists(file))
-                    MessageBox.Show("No image file");
-                else
-                {
-                    this.BackgroundImage = Image.FromFile(file);
-                    this.Size = this.BackgroundImage.Size;
-                }
-            }
+            MainApp form = new MainApp();
+            form.Text = "Form & Control";
+            form.Height = 150;
+            form.Controls.Add(button);
+
+            Application.Run(form);
         }
     }
     */
     #endregion
+    
 }
