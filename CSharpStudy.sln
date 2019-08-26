@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudy", "CSharpStudy.csproj", "{A5C40709-6CCE-4A04-A9B2-281A5D7E8B0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoServer", "Chapter21 Network\EchoServer\EchoServer.csproj", "{2E4D0573-D778-433F-91DD-C3C50A0BBE90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsTest", "Chapter20 WinForm\WindowsTest.csproj", "{6036D6FB-0628-4DCC-83AC-A5BAF9D34BFC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "Chapter20 WinForm\WindowsFormsApp\WindowsFormsApp.csproj", "{3B41E21E-08A5-4F5C-9A9D-D42274671D32}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFileIOFrom", "Chapter20 WinForm\AsyncFileIOFrom\AsyncFileIOFrom.csproj", "{EEAF511B-8C59-41EC-914F-4009F9F9579A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoClient", "Chapter21 Network\EchoClient\EchoClient.csproj", "{9208B765-3B6F-4125-8336-6EFC20A4650F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5C40709-6CCE-4A04-A9B2-281A5D7E8B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5C40709-6CCE-4A04-A9B2-281A5D7E8B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5C40709-6CCE-4A04-A9B2-281A5D7E8B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5C40709-6CCE-4A04-A9B2-281A5D7E8B0D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6036D6FB-0628-4DCC-83AC-A5BAF9D34BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6036D6FB-0628-4DCC-83AC-A5BAF9D34BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6036D6FB-0628-4DCC-83AC-A5BAF9D34BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6036D6FB-0628-4DCC-83AC-A5BAF9D34BFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B41E21E-08A5-4F5C-9A9D-D42274671D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B41E21E-08A5-4F5C-9A9D-D42274671D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B41E21E-08A5-4F5C-9A9D-D42274671D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B41E21E-08A5-4F5C-9A9D-D42274671D32}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EEAF511B-8C59-41EC-914F-4009F9F9579A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEAF511B-8C59-41EC-914F-4009F9F9579A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEAF511B-8C59-41EC-914F-4009F9F9579A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEAF511B-8C59-41EC-914F-4009F9F9579A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4D0573-D778-433F-91DD-C3C50A0BBE90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4D0573-D778-433F-91DD-C3C50A0BBE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4D0573-D778-433F-91DD-C3C50A0BBE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4D0573-D778-433F-91DD-C3C50A0BBE90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9208B765-3B6F-4125-8336-6EFC20A4650F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9208B765-3B6F-4125-8336-6EFC20A4650F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9208B765-3B6F-4125-8336-6EFC20A4650F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9208B765-3B6F-4125-8336-6EFC20A4650F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
